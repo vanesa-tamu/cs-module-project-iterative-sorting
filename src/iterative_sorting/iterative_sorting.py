@@ -17,13 +17,19 @@ def selection_sort(arr):
     return arr
 
 
-# # TO-DO:  implement the Bubble Sort function below
-# def bubble_sort(arr):
-#     # Your code here
-#
-#
-#     return arr
+# TO-DO:  implement the Bubble Sort function below
+def bubble_sort(arr):
+    # Your code here
+    for element in range(len(arr)):
+        for next_element in range(len(arr) - 1):
+            if arr[next_element] > arr[next_element + 1]:
+                arr[next_element], arr[next_element + 1] = arr[next_element + 1], arr[next_element]
 
+    return arr
+
+
+arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+print(bubble_sort(arr1))
 '''
 STRETCH: implement the Counting Sort function below
 
